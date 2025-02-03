@@ -13,6 +13,9 @@ export function getMaxSmallRectanglesInIsoscelesTriangle({
   smallRectangleWidth: number;
   smallRectangleHeight: number;
 }): number {
+  if (smallRectangleHeight <= 0 || smallRectangleWidth <= 0) {
+    return 0;
+  }
   let maxSmallRectangles = 0;
   const rectangleArea = getBiggestRectangleAreaInIsoscelesTriangle(
     triangleBase,

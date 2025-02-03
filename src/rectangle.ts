@@ -11,7 +11,7 @@ export function getMaxSmallRectanglesInRectangle({
   smallRectangleWidth: number;
   smallRectangleHeight: number;
 }): number {
-  if (smallRectangleHeight == 0 || smallRectangleWidth == 0) {
+  if (smallRectangleHeight <= 0 || smallRectangleWidth <= 0) {
     return 0;
   }
   const numFitWidth1 = Math.floor(largeRectangleWidth / smallRectangleWidth);

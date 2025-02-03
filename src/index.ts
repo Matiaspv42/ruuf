@@ -6,6 +6,15 @@ import { getMaxSmallRectanglesInIsoscelesTriangle } from './triangle'
 
 console.log(
   getMaxSmallRectanglesInRectangle({
+    largeRectangleWidth: 0,
+    largeRectangleHeight: 0,
+    smallRectangleWidth: 1,
+    smallRectangleHeight: 2
+  })
+);
+
+console.log(
+  getMaxSmallRectanglesInRectangle({
     largeRectangleWidth: 2,
     largeRectangleHeight: 4,
     smallRectangleWidth: 1,
